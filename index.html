@@ -127,16 +127,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-4 welcome-right w3-agileits">
-					<h4>Our Advantages </h4>
+					<h4>Wedding is in </h4>
 					<ul>
-						<li><span class="glyphicon glyphicon-menu-right"></span>Sed eu augue eget massa gravida</li>
-						<li><span class="glyphicon glyphicon-menu-right"></span>Vivamus finibus velit quis orci</li>
-						<li><span class="glyphicon glyphicon-menu-right"></span>Donec et nibh massa viverra luctus.</li>
-						<li><span class="glyphicon glyphicon-menu-right"></span>Lorem ipsum dolor sit consectetur </li>
-						<li><span class="glyphicon glyphicon-menu-right"></span>Sed eu augue eget massa gravida</li>
-						<li><span class="glyphicon glyphicon-menu-right"></span>Vivamus finibus velit quis orci</li>
-						<li><span class="glyphicon glyphicon-menu-right"></span>Sed eu augue eget massa gravida</li>
-						<li><span class="glyphicon glyphicon-menu-right"></span>Vivamus finibus velit quis orci</li>
+						<li>
+
+
+						<h1 id="demo"></h1>
+
+
+
+
+
+
+
+
+</li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
@@ -327,6 +332,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //events -->
+
+		<div class="contact-top">
+		<!-- container -->
+		<div class="container">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBZI0XytzfoU7skIY8EkixXQDAYbCWFzk4&q=Hari+Sharnam+Kannauj,+Uttar+Pradesh" allowfullscreen></iframe>
+			</div>
+			<div class="mail-grids">
+				<div class="col-md-6 mail-grid-left">
+					<h3>Address</h3>
+					<h5>Hari Sharnam guest house,</h5>
+					<h5>Kannauj</h5>
+					<h5>Uttar Pradesh,209727.</h5>
+					<h4>Get In Touch</h4>
+					<p>Telephone: +1 234 567 9871
+						<span>FAX: +1 234 567 9871</span>
+						E-mail: <a href="mailto:info@example.com">mail@example.com</a>
+					</p>
+				</div>
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+
+
 	<!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -422,6 +454,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 			});
 	</script>
+
+
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("March 10, 2018 19:00:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get todays date and time
+	  var now = new Date().getTime();
+
+	  // Find the distance between now an the count down date
+	  var distance = countDownDate - now;
+
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	  // Display the result in the element with id="demo"
+	  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+	  + minutes + "m " + seconds + "s ";
+
+	  // If the count down is finished, write some text 
+	  if (distance < 0) {
+	    clearInterval(x);
+	    document.getElementById("demo").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+	</script>
+
+
 	<!-- //here ends scrolling icon -->
 </body>	
 </html>
